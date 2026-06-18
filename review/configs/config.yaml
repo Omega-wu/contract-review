@@ -1,0 +1,13 @@
+OCR_URL: http://127.0.0.1:8001/ocr/task
+split_length: 1
+model_config:
+  model_type: qwenvl_oai
+  base_url: "http://172.19.4.136:8000/v1/"
+  api_key: ""
+  model: "qwen2.5"
+  generate_cfg':
+    'top_p': 0.001
+    'temperature': 0.01
+    'presence_penalty': 1.5
+    'max_tokens': 8000
+    'max_retries': 0

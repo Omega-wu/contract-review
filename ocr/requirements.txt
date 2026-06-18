@@ -1,0 +1,15 @@
+--index-url https://mirrors.bfsu.edu.cn/pypi/web/simple
+--extra-index-url https://www.paddlepaddle.org.cn/packages/stable/cu126/
+
+flask>=3.1.0
+flask-cors>=5.0.1
+flask-compress>=1.13
+gunicorn>=23.0.0
+loguru>=0.7.3
+pyyaml>=6.0.2
+requests>=2.31.0
+langchain==0.3.0
+
+paddlex[ocr]==3.2.1
+paddlepaddle==3.2.0 #paddlepaddle-gpu==3.0.0
+pypdfium2==4.30.1

@@ -1,0 +1,4 @@
+# OCR_WEIGHTS/weights/formula_rec
+OcrWeights: "/data/doc_review/"
+DeviceMode: "npu" # gpu
+layout_url: http://127.0.0.1:8002/layout/task

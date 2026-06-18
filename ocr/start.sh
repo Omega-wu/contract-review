@@ -1,0 +1,2 @@
+LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libGLdispatch.so.0:/usr/local/lib/python3.10/dist-packages/sklearn/utils/../../scikit_learn.libs/libgomp-d22c30c5.so.1.0.0:$LD_PRELOAD python3 -m gunicorn -w 1 --threads 8 -b 0.0.0.0:8002 layout_main:app --timeout 120 --pid layout_main_app.pid
+LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libGLdispatch.so.0:/usr/local/lib/python3.10/dist-packages/sklearn/utils/../../scikit_learn.libs/libgomp-d22c30c5.so.1.0.0:$LD_PRELOAD python3 -m gunicorn -w 1 --threads 8 -b 0.0.0.0:8001 main:app --timeout 120 --pid main_app.pid

@@ -1,0 +1,34 @@
+2025-11-02 23:54:16.003 | INFO     | tasks.layout:init:22 - Start loading the formula model.
+2025-11-02 23:54:16.003 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing layout_detection task with <class 'pdf_parser.tasks.layout.doclayout.LayoutDetectionPP'>
+2025-11-02 23:55:38.648 | INFO     | tasks.layout:init:22 - Start loading the formula model.
+2025-11-02 23:55:38.648 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing layout_detection task with <class 'pdf_parser.tasks.layout.doclayout.LayoutDetectionPP'>
+2025-11-02 23:55:39.037 | INFO     | tasks.layout:init:26 - The formula model has been successfully loaded.
+2025-11-02 23:56:24.008 | INFO     | api.layout_job:layout_task:40 - request file_info: 
+{'file_id': 'test_file_001'}
+2025-11-03 00:04:30.122 | INFO     | api.layout_job:layout_task:40 - request file_info: 
+{'file_id': 'test_file_001'}
+2025-11-03 00:04:44.775 | INFO     | tasks.layout:init:22 - Start loading the formula model.
+2025-11-03 00:04:44.775 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing layout_detection task with <class 'pdf_parser.tasks.layout.doclayout.LayoutDetectionPP'>
+2025-11-03 00:04:45.093 | INFO     | tasks.layout:init:26 - The formula model has been successfully loaded.
+2025-11-03 00:04:53.750 | INFO     | api.layout_job:layout_task:40 - request file_info: 
+{'file_id': 'test_file_001'}
+2025-11-03 00:04:53.751 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 00:05:12.444 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 00:13:20.091 | INFO     | api.layout_job:layout_task:40 - request file_info: 
+{'file_id': 'test_file_001'}
+2025-11-03 00:13:20.092 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 00:13:37.264 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 00:55:44.367 | INFO     | tasks.layout:init:22 - Start loading the layout model.
+2025-11-03 00:55:44.367 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing layout_detection task with <class 'pdf_parser.tasks.layout.doclayout.LayoutDetectionPP'>
+2025-11-03 00:55:44.725 | INFO     | tasks.layout:init:26 - The layout model has been successfully loaded.
+2025-11-03 00:56:50.821 | INFO     | api.layout_job:layout_task:40 - request file_info: 
+{'file_id': 'test_file_001'}
+2025-11-03 00:56:50.823 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 00:57:08.790 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 00:58:48.320 | INFO     | tasks.layout:init:22 - Start loading the layout model.
+2025-11-03 00:58:48.320 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing layout_detection task with <class 'pdf_parser.tasks.layout.doclayout.LayoutDetectionPP'>
+2025-11-03 00:58:48.645 | INFO     | tasks.layout:init:26 - The layout model has been successfully loaded.
+2025-11-03 00:58:52.988 | INFO     | api.layout_job:layout_task:40 - request file_info: 
+{'file_id': 'test_file_001'}
+2025-11-03 00:58:52.989 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 00:59:10.690 | INFO     | tasks.layout:layout_main:39 - Task done.

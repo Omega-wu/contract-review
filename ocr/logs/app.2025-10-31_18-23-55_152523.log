@@ -1,0 +1,194 @@
+2025-10-31 18:24:01.017 | INFO     | tasks.pdf2txt:init:30 - Start loading the OCR model.
+2025-10-31 18:24:01.017 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing layout_detection task with <class 'pdf_parser.tasks.layout.doclayout.LayoutDetectionPP'>
+2025-10-31 18:24:01.385 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing region_detection task with <class 'pdf_parser.tasks.region_dec.region_dectet.RegionDetectionPP'>
+2025-10-31 18:24:01.627 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing formula_recognition task with <class 'pdf_parser.tasks.formula_rec.pp_rec.FormulaRecognitionPP'>
+2025-10-31 18:24:04.846 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing ocr task with <class 'pdf_parser.tasks.ocr.paddle_ocr.ModifiedPaddleOCR'>
+2025-10-31 18:24:05.394 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing table_recognition task with <class 'pdf_parser.tasks.table_rec.pp_SLA_model.PPTableSLAModel'>
+2025-10-31 18:24:06.649 | INFO     | tasks.pdf2txt:init:34 - The OCR model has been successfully loaded.
+2025-10-31 19:14:46.946 | INFO     | api.job:ocr_task:41 - request file_info: 
+{'file_id': 'test_file_001'}
+2025-10-31 19:14:46.948 | INFO     | tasks.pdf2txt:ocr_main:91 - Start executing the task.
+2025-10-31 19:18:43.408 | INFO     | tasks.pdf2txt:init:30 - Start loading the OCR model.
+2025-10-31 19:18:43.408 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing layout_detection task with <class 'pdf_parser.tasks.layout.doclayout.LayoutDetectionPP'>
+2025-10-31 19:18:43.666 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing region_detection task with <class 'pdf_parser.tasks.region_dec.region_dectet.RegionDetectionPP'>
+2025-10-31 19:18:43.887 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing formula_recognition task with <class 'pdf_parser.tasks.formula_rec.pp_rec.FormulaRecognitionPP'>
+2025-10-31 19:18:46.869 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing ocr task with <class 'pdf_parser.tasks.ocr.paddle_ocr.ModifiedPaddleOCR'>
+2025-10-31 19:18:47.165 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing table_recognition task with <class 'pdf_parser.tasks.table_rec.pp_SLA_model.PPTableSLAModel'>
+2025-10-31 19:18:48.106 | INFO     | tasks.pdf2txt:init:34 - The OCR model has been successfully loaded.
+2025-10-31 19:18:53.230 | INFO     | api.job:ocr_task:41 - request file_info: 
+{'file_id': 'test_file_001'}
+2025-10-31 19:18:53.230 | INFO     | tasks.pdf2txt:ocr_main:91 - Start executing the task.
+2025-10-31 19:20:21.749 | ERROR    | tasks.pdf2txt:ocr_main:97 - Task execution failed: /Users/liujunyu/Desktop/ppt/debot-ai_new/ocr/weights/PP-LCNet_x1_0_doc_ori is not exists!
+Traceback (most recent call last):
+
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+    │    └ <function Thread._bootstrap_inner at 0x1015c4c20>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 14998859776)>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+    │    └ <function Thread.run at 0x1015c4900>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 14998859776)>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+    │    │        │    │        │    └ {}
+    │    │        │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 14998859776)>
+    │    │        │    └ (<socket.socket fd=8, family=2, type=1, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 53202)>, ('127.0.0.1', 53202))
+    │    │        └ <Thread(Thread-1 (process_request_thread), started daemon 14998859776)>
+    │    └ <bound method ThreadingMixIn.process_request_thread of <werkzeug.serving.ThreadedWSGIServer object at 0x15fcd1d10>>
+    └ <Thread(Thread-1 (process_request_thread), started daemon 14998859776)>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+    │    │              │        └ ('127.0.0.1', 53202)
+    │    │              └ <socket.socket fd=8, family=2, type=1, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 53202)>
+    │    └ <function BaseServer.finish_request at 0x106dd7060>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x15fcd1d10>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+    │    │                   │        │               └ <werkzeug.serving.ThreadedWSGIServer object at 0x15fcd1d10>
+    │    │                   │        └ ('127.0.0.1', 53202)
+    │    │                   └ <socket.socket fd=8, family=2, type=1, proto=0, laddr=('127.0.0.1', 8001), raddr=('127.0.0.1', 53202)>
+    │    └ <class 'werkzeug.serving.WSGIRequestHandler'>
+    └ <werkzeug.serving.ThreadedWSGIServer object at 0x15fcd1d10>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/socketserver.py", line 755, in __init__
+    self.handle()
+    │    └ <function WSGIRequestHandler.handle at 0x129b4f380>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x15c702ad0>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/werkzeug/serving.py", line 398, in handle
+    super().handle()
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/http/server.py", line 436, in handle
+    self.handle_one_request()
+    │    └ <function BaseHTTPRequestHandler.handle_one_request at 0x106df5120>
+    └ <werkzeug.serving.WSGIRequestHandler object at 0x15c702ad0>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/http/server.py", line 424, in handle_one_request
+    method()
+    └ <bound method WSGIRequestHandler.run_wsgi of <werkzeug.serving.WSGIRequestHandler object at 0x15c702ad0>>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    │       │    │      └ <Flask 'main'>
+    │       │    └ <werkzeug.serving.ThreadedWSGIServer object at 0x15fcd1d10>
+    │       └ <werkzeug.serving.WSGIRequestHandler object at 0x15c702ad0>
+    └ <function WSGIRequestHandler.run_wsgi.<locals>.execute at 0x1610d1940>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/werkzeug/serving.py", line 331, in execute
+    application_iter = app(environ, start_response)
+                       │   │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x1610d18a0>
+                       │   └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=8>, 'wsgi.errors': <_io.TextIOWrap...
+                       └ <Flask 'main'>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/flask/app.py", line 1536, in __call__
+    return self.wsgi_app(environ, start_response)
+           │    │        │        └ <function WSGIRequestHandler.run_wsgi.<locals>.start_response at 0x1610d18a0>
+           │    │        └ {'wsgi.version': (1, 0), 'wsgi.url_scheme': 'http', 'wsgi.input': <_io.BufferedReader name=8>, 'wsgi.errors': <_io.TextIOWrap...
+           │    └ <function Flask.wsgi_app at 0x129ef4720>
+           └ <Flask 'main'>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               │    └ <function Flask.full_dispatch_request at 0x129eebe20>
+               └ <Flask 'main'>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         │    └ <function Flask.dispatch_request at 0x129eebd80>
+         └ <Flask 'main'>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           │    │           │    │              │    │            └ {}
+           │    │           │    │              │    └ 'ocr.ocr_task'
+           │    │           │    │              └ <Rule '/ocr/task' (POST, OPTIONS) -> ocr.ocr_task>
+           │    │           │    └ {'static': <function Flask.__init__.<locals>.<lambda> at 0x15fd91f80>, 'ocr.ocr_task': <function ocr_task at 0x12df104a0>}
+           │    │           └ <Flask 'main'>
+           │    └ <function Flask.ensure_sync at 0x129ef4040>
+           └ <Flask 'main'>
+
+  File "/Users/liujunyu/Desktop/ppt/doc_review/ocr/api/job.py", line 59, in ocr_task
+    res = ocr_main(str(file_path), file_info)
+          │            │           └ {'file_id': 'test_file_001', 'file_directory': '/Users/liujunyu/Desktop/ppt/doc_review/ocr/download'}
+          │            └ PosixPath('/Users/liujunyu/Desktop/ppt/doc_review/ocr/download/43baa12177f34c3992cf762fd11aa951_wenjian.pdf')
+          └ <function ocr_main at 0x12f22b560>
+
+> File "/Users/liujunyu/Desktop/ppt/doc_review/ocr/tasks/pdf2txt.py", line 93, in ocr_main
+    res = ocr_task(file_path, file_info, tasks_dict)
+          │        │          │          └ {'layout_detection': <pdf_parser.tasks.layout.task.LayoutDetectionTask object at 0x15a088350>, 'region_detection': <pdf_parse...
+          │        │          └ {'file_id': 'test_file_001', 'file_directory': '/Users/liujunyu/Desktop/ppt/doc_review/ocr/download'}
+          │        └ '/Users/liujunyu/Desktop/ppt/doc_review/ocr/download/43baa12177f34c3992cf762fd11aa951_wenjian.pdf'
+          └ <function ocr_task at 0x12f22b4c0>
+
+  File "/Users/liujunyu/Desktop/ppt/doc_review/ocr/tasks/pdf2txt.py", line 80, in ocr_task
+    res_list = task(tasks_dict, file_path, file_info)
+               │    │           │          └ {'file_id': 'test_file_001', 'file_directory': '/Users/liujunyu/Desktop/ppt/doc_review/ocr/download'}
+               │    │           └ '/Users/liujunyu/Desktop/ppt/doc_review/ocr/download/43baa12177f34c3992cf762fd11aa951_wenjian.pdf'
+               │    └ {'layout_detection': <pdf_parser.tasks.layout.task.LayoutDetectionTask object at 0x15a088350>, 'region_detection': <pdf_parse...
+               └ <function task at 0x12f22afc0>
+
+  File "/Users/liujunyu/Desktop/ppt/doc_review/ocr/tasks/pdf2txt.py", line 65, in task
+    extract_results = pdf_2_md_task.process(input_data, file_info)
+                      │             │       │           └ {'file_id': 'test_file_001', 'file_directory': '/Users/liujunyu/Desktop/ppt/doc_review/ocr/download'}
+                      │             │       └ '/Users/liujunyu/Desktop/ppt/doc_review/ocr/download/43baa12177f34c3992cf762fd11aa951_wenjian.pdf'
+                      │             └ <function PDF2TXT.process at 0x15fd476a0>
+                      └ <pdf_parser.tasks.unstructed.unstructed_parser.PDF2TXT object at 0x15f8b62d0>
+
+  File "/Users/liujunyu/Desktop/ppt/doc_review/ocr/pdf_parser/tasks/unstructed/unstructed_parser.py", line 34, in process
+    pdf_res = list(self.predict(input_path))
+                   │    │       └ '/Users/liujunyu/Desktop/ppt/doc_review/ocr/download/43baa12177f34c3992cf762fd11aa951_wenjian.pdf'
+                   │    └ <function PDF2TXT.predict at 0x15fd91120>
+                   └ <pdf_parser.tasks.unstructed.unstructed_parser.PDF2TXT object at 0x15f8b62d0>
+
+  File "/Users/liujunyu/Desktop/ppt/doc_review/ocr/pdf_parser/tasks/unstructed/unstructed_parser.py", line 687, in predict
+    table_res_all = self.table_rec_mdoel.predict(doc_preprocessor_image,
+                    │    │               │       └ array([[[255, ..., 255],
+                    │    │               │                 ...,
+                    │    │               │                 [255, ..., 255]],
+                    │    │               │         
+                    │    │               │                ...,
+                    │    │               │         
+                    │    │               │                [[255, ..., 255],
+                    │    │               │                 ...,
+                    │    │               │                 [...
+                    │    │               └ <function TableRecognitionTaskTask.predict at 0x15fd36c00>
+                    │    └ <pdf_parser.tasks.table_rec.task.TableRecognitionTaskTask object at 0x15fd5b010>
+                    └ <pdf_parser.tasks.unstructed.unstructed_parser.PDF2TXT object at 0x15f8b62d0>
+
+  File "/Users/liujunyu/Desktop/ppt/doc_review/ocr/pdf_parser/tasks/table_rec/task.py", line 11, in predict
+    return self.model.predict(input_data,  overall_ocr_res, layout_det_res)
+           │    │     │       │            │                └ {'input_path': None, 'page_index': None, 'input_img': array([[[255, ..., 255],
+           │    │     │       │            │                          ...,
+           │    │     │       │            │                          [255, ..., 255]],
+           │    │     │       │            │                  
+           │    │     │       │            │                        ...
+           │    │     │       │            └ {'input_path': None, 'page_index': None, 'doc_preprocessor_res': {'output_img': array([[[255, ..., 255],
+           │    │     │       │                      ...,
+           │    │     │       │                     ...
+           │    │     │       └ array([[[255, ..., 255],
+           │    │     │                 ...,
+           │    │     │                 [255, ..., 255]],
+           │    │     │         
+           │    │     │                ...,
+           │    │     │         
+           │    │     │                [[255, ..., 255],
+           │    │     │                 ...,
+           │    │     │                 [...
+           │    │     └ <function PPTableSLAModel.predict at 0x15fd36a20>
+           │    └ <pdf_parser.tasks.table_rec.pp_SLA_model.PPTableSLAModel object at 0x15fd58e50>
+           └ <pdf_parser.tasks.table_rec.task.TableRecognitionTaskTask object at 0x15fd5b010>
+
+  File "/Users/liujunyu/Desktop/ppt/doc_review/ocr/pdf_parser/tasks/table_rec/pp_SLA_model.py", line 59, in predict
+    table_res_all = list(
+
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/paddlex/inference/pipelines/_parallel.py", line 129, in predict
+    yield from self._pipeline.predict(
+               │    │         └ <function _TableRecognitionPipelineV2.predict at 0x15fd34540>
+               │    └ <paddlex.inference.pipelines.table_recognition.pipeline_v2._TableRecognitionPipelineV2 object at 0x15fd59310>
+               └ <paddlex.inference.pipelines.table_recognition.pipeline_v2.TableRecognitionPipelineV2 object at 0x15fd59c90>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/paddlex/inference/pipelines/table_recognition/pipeline_v2.py", line 1163, in predict
+    self.table_orientation_classify_model = self.create_model(
+    │    │                                  │    └ <function BasePipeline.create_model at 0x15cf68720>
+    │    │                                  └ <paddlex.inference.pipelines.table_recognition.pipeline_v2._TableRecognitionPipelineV2 object at 0x15fd59310>
+    │    └ None
+    └ <paddlex.inference.pipelines.table_recognition.pipeline_v2._TableRecognitionPipelineV2 object at 0x15fd59310>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/paddlex/inference/pipelines/base.py", line 105, in create_model
+    model = create_predictor(
+            └ <function create_predictor at 0x12f3d58a0>
+  File "/Users/liujunyu/opt/anaconda3/envs/paddlex/lib/python3.11/site-packages/paddlex/inference/models/__init__.py", line 71, in create_predictor
+    assert Path(model_dir).exists(), f"{model_dir} is not exists!"
+           │    └ '/Users/liujunyu/Desktop/ppt/debot-ai_new/ocr/weights/PP-LCNet_x1_0_doc_ori'
+           └ <class 'pathlib.Path'>
+
+AssertionError: /Users/liujunyu/Desktop/ppt/debot-ai_new/ocr/weights/PP-LCNet_x1_0_doc_ori is not exists!

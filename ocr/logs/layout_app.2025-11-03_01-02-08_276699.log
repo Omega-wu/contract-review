@@ -1,0 +1,47 @@
+2025-11-03 01:02:08.276 | INFO     | tasks.layout:init:22 - Start loading the layout model.
+2025-11-03 01:02:08.276 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing layout_detection task with <class 'pdf_parser.tasks.layout.doclayout.LayoutDetectionPP'>
+2025-11-03 01:02:08.570 | INFO     | tasks.layout:init:26 - The layout model has been successfully loaded.
+2025-11-03 01:02:09.842 | INFO     | api.layout_job:layout_task:40 - request file_info: 
+{'file_id': 'test_file_001'}
+2025-11-03 01:02:09.843 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 01:02:27.577 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 01:59:28.137 | INFO     | tasks.layout:init:22 - Start loading the layout model.
+2025-11-03 01:59:28.137 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing layout_detection task with <class 'pdf_parser.tasks.layout.doclayout.LayoutDetectionPP'>
+2025-11-03 01:59:28.510 | INFO     | tasks.layout:init:26 - The layout model has been successfully loaded.
+2025-11-03 02:00:02.026 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:00:10.143 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:01:50.270 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:01:58.219 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:03:22.097 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:03:24.131 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:16:47.019 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:16:54.646 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:18:29.330 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:18:37.407 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:19:55.705 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:19:57.704 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:39:00.789 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:39:08.920 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:40:43.869 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:40:51.796 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:42:10.483 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:42:12.567 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:53:51.035 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:53:58.773 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:55:32.874 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:55:40.541 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:56:57.137 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:56:59.048 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:57:25.388 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:57:33.267 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 02:58:46.060 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 02:58:47.030 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 15:38:50.051 | INFO     | tasks.layout:init:22 - Start loading the layout model.
+2025-11-03 15:38:50.051 | INFO     | pdf_parser.utils.config_loader:initialize_tasks_and_models:23 - Initializing layout_detection task with <class 'pdf_parser.tasks.layout.doclayout.LayoutDetectionPP'>
+2025-11-03 15:38:50.498 | INFO     | tasks.layout:init:26 - The layout model has been successfully loaded.
+2025-11-03 15:39:54.257 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 15:40:02.296 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 15:41:39.305 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 15:41:46.839 | INFO     | tasks.layout:layout_main:39 - Task done.
+2025-11-03 15:43:07.756 | INFO     | tasks.layout:layout_main:36 - Start executing the task.
+2025-11-03 15:43:09.645 | INFO     | tasks.layout:layout_main:39 - Task done.
